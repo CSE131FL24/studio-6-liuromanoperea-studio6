@@ -36,7 +36,10 @@ public class RecursiveMethods {
 		
 		// FIXME
 			StdDraw.circle(xCenter, yCenter, radius);
-			
+			circlesUponCircles(xCenter + radius, yCenter + radius, radius/3.0, radiusMinimumDrawingThreshold);
+			circlesUponCircles(xCenter -radius, yCenter + radius, radius/3.0, radiusMinimumDrawingThreshold);
+			circlesUponCircles(xCenter + radius, yCenter - radius, radius/3.0, radiusMinimumDrawingThreshold);
+			circlesUponCircles(xCenter - radius, yCenter - radius, radius/3.0, radiusMinimumDrawingThreshold);
 
 	}
 
